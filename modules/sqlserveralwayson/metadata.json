@@ -1,0 +1,38 @@
+{
+  "name": "virtualdesktopdevops-sqlserveralwayson",
+  "version": "2.0.0",
+  "author": "virtualdesktopdevops",
+  "summary": "Microsoft SQL Server puppet module with AlwaysOn clustering features",
+  "license": "Apache-2.0",
+  "source": "https://virtualdesktopdevops.github.io/sqlserveralwayson/",
+  "project_page": "http://www.virtualdesktopdevops.com/",
+  "issues_url": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "Server 2012 R2",
+        "Server 2016"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.8.0 < 6.0.0"
+    }
+  ],
+  "tags": [
+    "powershell",
+    "dsc",
+    "sql-server",
+    "microsoft",
+    "cluster",
+    "alwayson",
+    "sql"
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/powershell","version_requirement":">= 1.0.3"},
+    {"name":"puppetlabs/dsc","version_requirement":">= 1.5.0"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "puppetlabs-dism",
+  "version": "1.3.1",
+  "author": "Puppet Inc",
+  "summary": "Provides a DISM puppet resource type on Windows.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/puppetlabs/puppetlabs-dism",
+  "project_page": "https://github.com/puppetlabs/puppetlabs-dism",
+  "issues_url": "https://tickets.puppetlabs.com/browse/MODULES/component/12014",
+  "dependencies": [
+  
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2008",
+        "Server 2008 R2",
+        "Server 2012",
+        "Server 2012 R2",
+        "Server 2016",
+        "8",
+        "8.1",
+        "10"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.4.0 < 7.0.0"
+    }
+  ],
+  "tags": [
+    "deployment-image-servicing-and-management",
+    "dism",
+    "feature",
+    "microsoft",
+    "package"
+  ],
+  "pdk-version": "1.6.0",
+  "template-url": "file://C:/Program Files/Puppet Labs/DevelopmentKit/share/cache/pdk-templates.git",
+  "template-ref": "1.6.0-0-gf5564c0"
+}

@@ -1,0 +1,16 @@
+{
+  "CHANGELOG.md": "c60bc1522c18c750f4432b7b0d6a6ac2",
+  "LICENSE": "6c4db32a2fa8717faffa1d4f10136f47",
+  "README.markdown": "bff859dcbcf76f4684e3f4e95d55836d",
+  "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+  "lib/facter/domainnetbiosname.rb": "6da0efc733c2451e53261895872fa810",
+  "manifests/alwaysonconfig.pp": "9bc7c904d1b18e715dddf4425d5fb918",
+  "manifests/clusterconfig.pp": "5fcb6f114b0d3027ac9b238bc94b7fd7",
+  "manifests/config.pp": "4ff99f755b81ca99e69c64c6fcf979cf",
+  "manifests/init.pp": "d730231148a5271fe127de0600393f8d",
+  "manifests/install.pp": "1ecc1cc1ec44d829bc780e55d01b6c13",
+  "manifests/serviceaccounts.pp": "1b66a75afd23fe14c327e80379658c10",
+  "metadata.json": "d4a910db84279c65b2e7325ae20895b6",
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0"
+}
