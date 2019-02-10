@@ -1,7 +1,0 @@
-class motd ($motd_message = 'Daily') {
-   file {'C:\Messageofserver':
-        ensure => 'present',
-        content => file("motd/${motd_message}"),
-   }
-}
- 

@@ -13,7 +13,7 @@
 class mssql (
   # See http://msdn.microsoft.com/en-us/library/ms144259.aspx
   # Media is required to install
-  $media,
+  $media          = $mssql::params::media,
   $instancename   = $mssql::params::instancename,
   $features       = $mssql::params::features,
   $agtsvcaccount  = $mssql::params::agtsvcaccount,

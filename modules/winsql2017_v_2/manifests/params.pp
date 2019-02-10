@@ -34,4 +34,5 @@ class mssql::params {
   $ascollation    = 'Latin1_General_CI_AS'
   $sqlcollation   = 'SQL_Latin1_General_CP1_CI_AS'
   $admin          = 'Administrator'
+  $media          = 'C:\temp\sql2017'
 }
