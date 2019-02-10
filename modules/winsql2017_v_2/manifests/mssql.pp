@@ -54,18 +54,22 @@ class mssql (
 
   user { 'SQLAGTSVC':
     comment  => 'SQL 2017 Agent Service.',
+    ensure => 'present',
     password => $agtsvcpassword,
   }
   user { 'SQLASSVC':
     comment  => 'SQL 2017 Analysis Service.',
+    ensure => 'present',
     password => $assvcpassword,
   }
   user { 'SQLRSSVC':
     comment  => 'SQL 2017 Report Service.',
+    ensure => 'present',
     password => $rssvcpassword,
   }
   user { 'SQLSVC':
     comment  => 'SQL 2017 Service.',
+    ensure => 'present',
     groups   => 'Administrators',
     password => $sqlsvcpassword,
   }
