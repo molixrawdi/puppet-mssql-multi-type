@@ -13,7 +13,8 @@
 class mssql (
   # See http://msdn.microsoft.com/en-us/library/ms144259.aspx
   # Media is required to install
-  $media          = $mssql::params::media,
+  #$media          = $mssql::params::media,
+  $media          = 'c:\temp\sql2017\setup.exe',
   $instancename   = $mssql::params::instancename,
   $features       = $mssql::params::features,
   $agtsvcaccount  = $mssql::params::agtsvcaccount,
