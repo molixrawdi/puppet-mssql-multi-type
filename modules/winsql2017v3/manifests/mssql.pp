@@ -75,7 +75,7 @@ class winsql2017v3::mssql (
   }
 
   exec { 'install_mssql2017':
-    command   => "${media}\\setup.exe /Action=Install /IACCEPTSQLSERVERLICENSETERMS /QS /CONFIGURATIO
+    command   => "c:\temp\sql2017\setup.exe /Action=Install /IACCEPTSQLSERVERLICENSETERMS /QS /CONFIGURATIO
 NFILE=C:\\temp\sql2017\ConfigurationFile.ini /SQLSVCPASSWORD=\"${sqlsvcpassword}\" /AGTSVCPASSWORD=\"${agtsvcpassword
 }\" /ASSVCPASSWORD=\"${assvcpassword}\" /RSSVCPASSWORD=\"${rssvcpassword}\"",
     cwd       => $media,
