@@ -71,7 +71,7 @@ class winsql2017v3::mssql (
 
   file { 'C:/temp/sql2017/setup.exe':
     #content => template('mssql/config.ini.erb'),  #changed by Mo Mon 11/02/2019
-    content =>template('c:/ProgramData/PuppetLabs/code/environments/test/modules/winsql2017v3/templates/config.ini.erb'),
+    content =>template('C:\ProgramData\PuppetLabs\code\environments\test\modules\winsql2017v3\templates\configuration.ini.erb'),
   }
 
   exec { 'install_mssql2017':
