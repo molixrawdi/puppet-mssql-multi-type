@@ -76,14 +76,13 @@ class winsql2017v3::mssql (
 
   exec { 'install_mssql2017':
     command   => "${media}\\setup.exe /Action=Install /IACCEPTSQLSERVERLICENSETERMS /QS /CONFIGURATIO
-NFILE=C:\\sql2008install.ini /SQLSVCPASSWORD=\"${sqlsvcpassword}\" /AGTSVCPASSWORD=\"${agtsvcpassword
+NFILE=C:\\temp\sql2017\ConfigurationFile.ini /SQLSVCPASSWORD=\"${sqlsvcpassword}\" /AGTSVCPASSWORD=\"${agtsvcpassword
 }\" /ASSVCPASSWORD=\"${assvcpassword}\" /RSSVCPASSWORD=\"${rssvcpassword}\"",
     cwd       => $media,
     path      => $media,
     logoutput => true,
     creates   => $instancedir,
     timeout   => 1200,
-    require   => File['C:\temp\sql2017\ConfigurationFile.ini'],
-                   #Dism['NetFx3'] ],
+    #require   => File['puppet://modules/winsql2017v3/ConfigurationFile.ini'],
   }
 }
