@@ -25,21 +25,21 @@ class winsql2017v3::mssql (
 ) inherits winsql2017v3::params {
 
    # validation
-  validate_string($media)
-  validate_string($instancename)
-  validate_string($features)
-  validate_string($agtsvcaccount)
-  validate_string($agtsvcpassword)
-  validate_string($assvcaccount)
-  validate_string($assvcpassword)
-  validate_string($rssvcaccount)
-  validate_string($rssvcpassword)
-  validate_string($sqlsvcaccount)
-  validate_string($sqlsvcpassword)
-  validate_string($instancedir)
-  validate_string($ascollation)
-  validate_string($sqlcollation)
-  validate_string($admin)
+ # validate_string($media)
+  #validate_string($instancename)
+  #validate_string($features)
+  #validate_string($agtsvcaccount)
+  #validate_string($agtsvcpassword)
+  #validate_string($assvcaccount)
+  #validate_string($assvcpassword)
+  #validate_string($rssvcaccount)
+  #validate_string($rssvcpassword)
+  #validate_string($sqlsvcaccount)
+  #validate_string($sqlsvcpassword)
+  #validate_string($instancedir)
+  #validate_string($ascollation)
+  #validate_string($sqlcollation)
+  #validate_string($admin)
   
 
   User {
@@ -70,7 +70,8 @@ class winsql2017v3::mssql (
   }
 
   file { 'C:/temp/sql2017/setup.exe':
-    content => template('mssql/config.ini.erb'),
+    #content => template('mssql/config.ini.erb'),  #changed by Mo Mon 11/02/2019
+    content =>template('config.ini.erb'),
   }
 
   exec { 'install_mssql2017':
