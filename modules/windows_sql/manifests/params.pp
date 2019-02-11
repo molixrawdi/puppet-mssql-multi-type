@@ -36,7 +36,8 @@ class windows_sql::params (
 
   $instancename                 = $instancename,
   $instanceid                   = $instanceid,
-  $features                     = $features,
+  #$features                     = $features, #Mo chnaged this 
+  $features                      ="SQLENGINE,BC,SDK,SNAC_SDK,MDS",
 
   # AGT
   $agtsvcaccount                = $agtsvcaccount,

@@ -96,7 +96,8 @@ class windows_sql (
   $sapwd                          = '',
 
   $pid                            = '',
-  $configurationfile              = 'C:\\configurationfile.ini',
+  #$configurationfile              = 'C:\\configurationfile.ini', changed by Mo
+  $configurationfile              = 'c:\\tools\SQL2017\configuration.ini',
   
   $userxml                        = 'C:\\users.xml',              #path of users xml file for load automatically his password
   $mode                           = 'agent',                      # mode for getting back from xml the svc account password. Default 'agent'. Other value 'master'
