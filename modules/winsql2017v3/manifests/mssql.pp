@@ -83,7 +83,7 @@ NFILE=C:\\sql2008install.ini /SQLSVCPASSWORD=\"${sqlsvcpassword}\" /AGTSVCPASSWO
     logoutput => true,
     creates   => $instancedir,
     timeout   => 1200,
-    require   => File['C:/temp/sql2017/ConfigurationFile.ini'],
+    require   => File['C:\temp\sql2017\ConfigurationFile.ini'],
                    #Dism['NetFx3'] ],
   }
 }
