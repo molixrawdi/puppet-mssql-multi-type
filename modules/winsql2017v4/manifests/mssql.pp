@@ -7,7 +7,7 @@
 class winsql2017v4::mssql (
   # See http://msdn.microsoft.com/en-us/library/ms144259.aspx
   # Media is required to install
-  $media          = 'C:\SQL2017',
+  $sourcedir      = "c:\SQL2017",
   $instancename   = 'MSSQLSERVER',
   #$instancedir    = $mssql::params::instancedir,
   #$ascollation    = $mssql::params::ascollation,
@@ -35,8 +35,11 @@ class winsql2017v4::mssql (
     #timeout   => 1200,
     #require   => File['puppet://modules/winsql2017v3/ConfigurationFile.ini'],
   #}
- exec { 'install_mssql2017':
-         command =>"Invoke-command -ComputerName WIN-P2CE6DEIDNU -\ScriptBlock {C:\SQL2017\setup.exe /ConfigurationFile="ConfigurationFile.ini"}",
-         cwd     => $media,      
- }
+ #exec { 'install_mssql2017':
+ #        command =>"Invoke-command -ComputerName WIN-P2CE6DEIDNU -\ScriptBlock {C:\SQL2017\setup.exe /ConfigurationFile="ConfigurationFile.ini"}",
+ #        cwd     => $media,      
+ #}
+   exec { 'install_mssql2017':
+          command => "${sourcedir}\\setup.exe /IAcceptSQLServerLicenseTerms /Action=Install /ConfigurationFile=${sourcedir}\\ConfigurationFile.ini", 
+   }       
 }
