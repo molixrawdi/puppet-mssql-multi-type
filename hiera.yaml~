@@ -11,9 +11,5 @@ hierarchy:
   - name: "Per-node data (yaml version)"
     path: "nodes/%{::trusted.certname}.yaml"
   - name: "Other YAML hierarchy levels"
-    paths: ## Added teh below
-      - "nodes/%{trusted.certname}.yaml"
-      - "roles/%{::role}.yaml"
-      - "%{::environment}.yaml"
-      - "os/%{::osfamily}.yaml"
-      - common.yaml
+    paths:
+      - "common.yaml"
